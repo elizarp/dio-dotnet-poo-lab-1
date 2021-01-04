@@ -61,9 +61,9 @@ namespace DIO.Bank
 			int indiceConta = int.Parse(Console.ReadLine());
 
 			Console.Write("Digite o valor a ser sacado: ");
-			double valorDeposito = double.Parse(Console.ReadLine());
+			double valorSaque = double.Parse(Console.ReadLine());
 
-            listContas[indiceConta].Sacar(valorDeposito);
+            listContas[indiceConta].Sacar(valorSaque);
 		}
 
 		private static void Transferir()
@@ -74,7 +74,7 @@ namespace DIO.Bank
             Console.Write("Digite o número da conta de destino: ");
 			int indiceContaDestino = int.Parse(Console.ReadLine());
 
-			Console.Write("Digite o valor a ser trasnferido: ");
+			Console.Write("Digite o valor a ser transferido: ");
 			double valorTransferencia = double.Parse(Console.ReadLine());
 
             listContas[indiceContaOrigem].Transferir(valorTransferencia, listContas[indiceContaDestino]);
